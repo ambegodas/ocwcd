@@ -1,0 +1,29 @@
+<taglib version="2.0" xmlns="http://java.sun.com/xml/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+<tlib-version>1.2</tlib-version>
+<uri>beerAppTags</uri>
+<tag>
+<description>Tags required for beer app</description>
+<name>formTag</name>
+<tag-class>ocwcd.BeerAppTagHandler</tag-class>
+<body-content>empty</body-content>
+
+<attribute>
+<name>optionsList</name>
+<type>java.util.List</type>
+<required>true</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+
+<attribute>
+<name>size</name>
+<required>true</required>
+</attribute>
+
+<attribute>
+<name>name</name>
+<required>true</required>
+</attribute>
+
+<dynamic-attributes>true</dynamic-attributes>
+</tag>
+</taglib>

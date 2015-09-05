@@ -9,4 +9,24 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <context-param>
+  <param-name>User</param-name>
+  <param-value>Admin</param-value>
+  </context-param>
+   
+  <servlet>
+  <servlet-name>home</servlet-name>
+  <jsp-file>/implicitObjects.jsp</jsp-file>
+  <init-param>
+    <param-name>User</param-name>
+    <param-value>Pankaj</param-value>
+  </init-param>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>home</servlet-name>
+  <url-pattern>/home.do</url-pattern>
+  <url-pattern>/home.jsp</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
